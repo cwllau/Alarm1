@@ -73,12 +73,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Get longitude of the current location
         double longitude = myLocation.getLongitude();
 
-
-        LatLng hcmus = new LatLng(latitude, longitude);
+        //current location marker at opening
+        /*LatLng hcmus = new LatLng(latitude, longitude);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(hcmus, 18));
         originMarkers.add(mMap.addMarker(new MarkerOptions()
                 .title("current")
-                .position(hcmus)));
+                .position(hcmus)));*/
 
 
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
